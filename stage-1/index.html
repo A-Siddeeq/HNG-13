@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Modern Profile Card</title>
+    <link rel="stylesheet" href="styles/index.css" />
+  </head>
+  <body style="display: flex; flex-direction: column">
+    <nav class="navbar">
+      <a href="index.html">Profile Card</a>
+      <a href="pages/contact.html">Contact Us</a>
+      <a href="pages/about.html">About</a>
+    </nav>
+
+    <article data-testid="test-profile-card" aria-label="User profile card">
+      <figure>
+        <img
+          src="assets/pic.jpg"
+          alt="User avatar"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <div class="content">
+        <header>
+          <h2 data-testid="test-user-name">Abubakar Sadiq Adamu</h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+          Frontend Engineer crafting elegant, responsive interfaces. Lover of
+          clean, bug-free code, and all things JavaScript.
+        </p>
+
+        <p data-testid="test-user-time" id="time"></p>
+
+        <nav
+          data-testid="test-user-social-links"
+          aria-label="User social links"
+        >
+          <a
+            href="https://x.com/_absaad"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-x"
+            aria-label="X"
+          >
+            <img
+              src="assets/twitter.jpg"
+              alt="x icon"
+              style="width: 26px; border-radius: 50%"
+            />
+          </a>
+          <a
+            href="https://github.com/a-siddeeq"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="test-user-social-github"
+            aria-label="GitHub"
+          >
+            <img
+              src="assets/github.png"
+              alt="github icon"
+              style="width: 26px; border-radius: 50%"
+            />
+          </a>
+        </nav>
+
+        <section data-testid="test-user-hobbies">
+          <h3>Hobbies</h3>
+          <ul>
+            <li>Reading</li>
+            <li>Writing</li>
+            <li>Open-source UI design</li>
+          </ul>
+        </section>
+
+        <section data-testid="test-user-dislikes">
+          <h3>Dislikes</h3>
+          <ul>
+            <li>Console errors</li>
+            <li>Slow animations</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
